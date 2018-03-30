@@ -1,0 +1,55 @@
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <script type="text/javascript">
+        var count = 1;
+        var sh;
+        function counter(){
+            sh = setInterval(jishi,1000);
+        }
+
+        function jishi(){
+            var btn = document.getElementById("btn");
+            btn.innerHTML = "倒计时"+(--count)+"秒";
+            if(count == 0){
+                btn.disabled = false;
+                btn.innerHTML = "开始点击";
+                clearInterval(sh);
+
+                btn.onclick = function(){
+                    var result = document.getElementById("result");
+                    setInterval(function(){
+                        //执行点击操作
+                        result.innerHTML = "您点击了："+(count++)+"次";
+
+                    },100);
+                };
+                btn.click();
+            }
+        }
+
+        window.onload = counter;
+
+//        function check(date){
+//            return (new Date(date).getDate()==date.substring(date.length-2));
+//        }
+////        check('2017-06-13 18:06:04')
+//        console.log(check('2017-06-13 18:06:04'))
+//
+        var day="周"+"日一二三四五六 ".charAt(new Date('2017-06-21 13:52:55').getDay());
+        console.log(day)
+
+        var weekDay = ["星期天", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六"];
+        var dateStr = "2017-06-21 14:11:03";
+        var myDate = new Date(Date.parse(dateStr.replace(/-/g, "/")));
+        alert(weekDay[myDate.getDay()]);
+    </script>
+</head>
+<body bgcolor="red">
+<button id="btn" disabled="disabled" bgcolor="skyblue">倒计时5秒</button>
+<span id="result" ></span>
+
+
+
+</body>
+</html>

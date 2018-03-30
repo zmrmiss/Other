@@ -1,0 +1,269 @@
+body{font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif; background: #f7f7f7;}
+
+html {font-size: 10px;}
+@media only screen and (min-width: 400px) {
+    html {
+        font-size: 10.66666666px !important;
+    }
+}
+@media only screen and (min-width: 414px) {
+    html {
+        font-size: 11.04px !important;
+    }
+}
+@media only screen and (min-width: 480px) {
+    html {
+        font-size: 12.8px !important;
+    }
+}
+
+div{box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;-webkit-tap-highlight-color: rgba(0,0,0,0);}
+a{-webkit-tap-highlight-color: rgba(0,0,0,0); color: #575757;}
+input{-webkit-tap-highlight-color: rgba(0,0,0,0);}
+
+/* 公共部分 */
+.bodyColor-Orange{ background: #f35e45;}
+.bodyColor-White{ background: #fff;}
+.bodyColor-Green{ background: #00b487;}
+.bodyColor-Red{ background: #e76248;}
+.bg-grey{ background: #f7f7f7; }
+.text-center{ text-align: center; }
+.text-right{ text-align: right; }
+.text-left{ text-align: left;}
+.position{position: relative;}
+.color-FF6900{ color: #FF6900; }
+.color-575757{ color: #575757; }
+.color-808080{ color: #808080; }
+.color-a5a5a5{ color: #a5a5a5; }
+.color-fff{color: #fff!important;}
+.font-28{ font-size: 1.4rem; }
+.font-32{ font-size: 1.6rem; }
+.font-bold{font-weight: bold;}
+.mrl-20{ margin-left: 1rem; }
+.mgt-44{ margin-top: 4.4rem; }
+a.font-FF6900{ color: #FF6900 }
+.col-2{width: 16.67%;}
+.col-3{width: 25%;}
+.col-4{width: 33.33%;}
+.col-6{width: 50%;}
+.lf{float: left;}
+.get-nomore{ text-align: center; color: #808080; font-size: 1.2rem; line-height: 4rem; }
+.btn-getCustomer{ display: none; z-index: 1000; position: fixed; bottom: 0; left: 0; right: 0; text-align: center; line-height: 5rem; color: #fff; font-size: 1.6rem; background: #ff6900; }
+#cnzz_stat_icon_1260920083{ display: none; }
+.cnzz{ display: none; }
+
+
+.product-wrap{ line-height: 4.4rem; margin-bottom: .8rem; font-size: 1.4rem; }
+.flow-wrap{line-height: 4.4rem; margin-bottom: .8rem; font-size: 1.4rem; }
+.mation-wrap{ height: auto; font-size: 1.4rem;position: relative;padding: 1.4rem 1.4rem 1.1rem; }
+.flex-wrap{display: -webkit-box; display: -webkit-flex;display:-ms-flexbox;display: flex;-webkit-box-pack: justify;-webkit-justify-content: space-between; justify-content:space-between; color: #575757;padding: 0 1.6rem;}
+.wrapable{ flex-wrap: wrap;}
+.flex-wrap-static{ padding: .4rem 1.6rem; line-height: 3rem; color: #808080; }
+.data-list,.bod-botm{ position: relative; }
+.data-list:after,.bod-botm:after{ bottom: 0; top: auto; background-color: #e4e4e4; -webkit-transform-origin: 50% 100%; transform-origin: 50% 100%; content: ''; position: absolute; left: 0; height: 1px; width: 100%; display: block; right: auto; z-index: 15;}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+    .bod-botm:after {
+        -webkit-transform:scaleY(.5);
+        transform: scaleY(.5)
+    }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 3) {
+    .bod-botm:after {
+        -webkit-transform:scaleY(.33);
+        transform: scaleY(.33)
+    }
+}
+.is-spread{align-items: center;}
+
+
+.card-block{
+    background-color: #fff;
+    margin-bottom: .8rem;
+}
+.fsize{
+    font-size: 1.6rem;line-height: 1.6rem;padding-top: 1.4rem;padding-bottom: 1rem
+}
+.abbreviation{
+    font-size: 1.4rem;line-height: 1.4rem;
+}
+.wechat-exp{
+    padding-left:1.6rem;padding-right: 1.6rem;line-height: 1.8rem;padding-top:0.6rem;
+}
+.viue{
+    padding-left:1.6rem;padding-right: 1.6rem;line-height: 2rem;padding-top:0.4rem;padding-bottom:0.6rem
+}
+.fb-title{
+    line-height: 3rem;
+}
+.fb-exp{
+    padding: 0 1.6rem;position: relative
+}
+.fb-img{
+    float: left;width: 3.6rem;height: 3.6rem;display: inline-block;margin:1rem 0;border-radius: 50%;overflow: hidden
+}
+.fb-name{
+    float: left;display: inline-block;margin-left: 1rem;font-size: 1.4rem;line-height: 5.6rem
+}
+.online{
+    position: absolute;border: 1px solid #ff6900;border-radius: 4px;width: 10rem;height: 2.8rem;top: 50%;right: 1.6rem;color: #ff6900;text-align: center;line-height: 2.8rem;margin-top: -1.4rem
+}
+
+
+.mation-t{
+    height: 5.7rem;
+    border-bottom: 1px solid #e4e4e4;
+    padding-bottom: 1rem;
+    position: relative;
+}
+.mation-wrap .mation-t .mation{
+    float: left;
+    width: 4.3rem;
+    height: 4.3rem;
+}
+.mation-wrap .mation-t .mation-title{
+    line-height: 2rem;
+    font-size: 120%;
+    color: #808080;
+}
+.mation-wrap .mation-t .mation-radio{
+    position: absolute;
+    right: 1.4rem;
+    top: 50%;
+    font-size: 150%;
+    margin-top: -1.8rem;
+}
+.mation-wrap .mation-t .mation-radio i::before{
+    color: #575757;
+}
+#icons span.iconfont{
+    color: #a5a5a5;
+}
+#icons span.iconfont:before{
+    color: #c9c9c9;
+    margin-right: 0.2rem;
+}
+.mation-b{
+    position: relative;
+    padding-top: 1rem;
+
+}
+.formdis{
+    position: absolute;
+    right: 4px;
+    bottom: 0.3rem;
+    color: #a5a5a5;
+    font-size: 1rem;
+}
+.mation-b div span::before{
+    font-size: 1.6rem;
+}
+.mation-b .fontsma{
+    float: left;
+    font-size: 24px;
+    line-height: 20px;
+}
+.mation-b .fontsma:before{
+    font-size: 2.2rem;
+    color: #c9c9c9;
+}
+.Application{
+    height: 4rem;
+}
+.Application .cat-btn,.Application .lagbtn{
+    width: 100%; margin: 0.8rem auto 0; text-align: center; color: #fff; background: #FF6900; line-height: 4rem; font-size: 1.6rem;position: fixed;
+    bottom: 0;z-index: 60000; left: 0; right: 0;height: 4rem;
+}
+.Application .cat-btn a{
+    color: #fff;
+    display: block;
+}
+
+.lagbtn>div{
+    width: 50%;background-color: #ffc69e;display: inline-block;text-align: center;float:left;line-height: 4rem;
+}
+
+
+
+
+.to-share{
+    width: 100%;height: 100%;background-color:rgba(0,0,0,0.6);position: fixed;top: 0;z-index: 60001;display: none;
+}
+.lt-alert{
+    width: 100%;height: 100%;background-color:rgba(0,0,0,0.3);position: fixed;top: 0;z-index: 60001;display: none;
+}
+.lt-banner{
+    width: 80%;height: 16.3rem;margin: 0 auto;margin-top: 30%;border-radius: 4px;padding: 0 1.6rem
+}
+
+.wechat_input{
+    text-align: center;
+}
+.wechat_input input{
+    border: 1px solid #e5e5e5;border-radius: 4px;width: 100%;height: 3.6rem;padding-left: 1rem;font-size: 1.6rem;
+}
+.btn-left,.btn-right{
+    width: 48%;height: 3rem;border-radius: 4px;background-color: #c9c9c9;float: left;color: #fff;text-align: center;line-height: 3rem;
+}
+.wechat-int input::-webkit-input-placeholder,.wechat_input input::-webkit-input-placeholder{color:#C9C9C9;}
+.wechat-int input:-moz-placeholder ,.wechat_input input:-moz-placeholder {color:#C9C9C9;}
+.wechat-int input:-moz-placeholder ,.wechat_input input:-moz-placeholder {color:#C9C9C9;}
+.wechat-int input:-ms-input-placeholder ,.wechat_input input:-ms-input-placeholder {color:#C9C9C9;}
+
+
+/*首页*/
+.wechat-int{
+    padding: 1rem 1.6rem;line-height: 2.8rem;position: relative;
+}
+.wechat-int input{
+    width: 100%;border: 1px solid #c9c9c9;border-radius: 4px;height: 2.8rem;padding-left: 1rem;
+}
+.wechat-int i.iconfont{
+
+}
+.wechat-int i{
+    position: absolute;
+    right: 2rem;
+    top: 50%;
+    color: #C9C9C9;
+    margin-top: -1.5rem;
+}
+.wechat-int i.iconfont:before{
+    color: #c9c9c9;font-size: 1.8rem;
+}
+.data-list{
+    padding: 1.6rem
+}
+.wechat-size{
+    font-size: 1.4rem;line-height: 1.4rem;
+}
+.wechat-img{
+    float: left;width: 5.6rem;height:5.6rem;margin-right: 1rem;border-radius: 8px;overflow: hidden
+}
+.wechat-coat{
+    font-size: 1.2rem;line-height: 1.2rem;color: #a5a5a5;
+}
+.wechat-coat span{
+    margin-right: 1.6rem;
+}
+.xh-li{
+    cursor: pointer;line-height: 2.6rem;width: 29.333333%;border: 1px solid #dbdbdb;margin-bottom: .8rem;margin-right: 4%;text-align: center;border-radius:1.3rem 1.3rem 1.3rem 1.3rem;display: inline-block;color: #939393;font-size: 1.4rem;
+}
+.xh-li:nth-child(3n) {
+    margin-right: -40px;
+}
+.cl-title{
+    font-size: 1.4rem;line-height: 3.4rem;color: #808080;
+}
+.address{
+    position: absolute;
+    left: 1.6rem;
+    top: 50%;
+    margin-top: -2.2rem;
+}
+.address span{
+    font-size: 1.4rem;color: #575757;margin-right:0.8rem
+}
+.address  i.iconfont:before{
+    font-size: 1.6rem;
+    color: #939393;
+}
